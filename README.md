@@ -33,10 +33,29 @@ If you get an "WRITE" error, go to Developer options and look for "Disable permi
 6. This step is important!
 If the code is accepted (that command did nothing to your phone) find the following data* and write it down, this will allow you to revert back if you do not like the lower resolution, do not skip this step, If you mess your screen up, with this you can go back:
 
-width: 1080 height: 1920 density: 480
+Mine (OPPO A53S) width: 720 height: 1600 density: 690
 
 *You can search your phone specs on the web too
 
+Nte that, you may need to mess with the density (ppi) until you can read well and the phone GUI looks confortable.
+
+Lets say your phone has a res. of 1080x1920, 480 ppi.. (yes, its height x width, not width x height)
+
+So we're lowering it to 720x1280, 350 ppi. insert commands below:
+
+adb shell wm size 720x1280
+
+adb shell wm density 350
+
+However my phone didnt have such a nice known resolution. It was 540x960, 256 ppi. So i did need an 16:9 resolution table to consult lower options: https://pacoup.com/2011/06/12/list-of-true-169-resolutions/
+
+Below are the lines i inserted in my phone.
+
+adb shell wm size 396x704
+
+adb shell wm density 200.
+
+Hope this helps!
 
 Todo:
 
