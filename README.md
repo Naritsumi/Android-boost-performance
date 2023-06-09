@@ -27,34 +27,33 @@ Extract the contents of this ZIP file into an easily accessible folder and add i
 4. Once installed run cmd on pc (Windows key + R, Type CMD and hit enter) or Terminal. Plug phone in.
 
 5. Once in CMD or Terminal enter: ``adb shell dumpsys display``.
-If you get an "Not authorized" error check your phone and authorize the PC and try again.
-If you get an "WRITE" error, go to Developer options and look for "Disable permission monitoring" and toggle on. Unplug and plug in, then try again.
+
+* If you get an "Not authorized" error check your phone and authorize the PC and try again.
+* If you get an "WRITE" error, go to Developer options and look for "Disable permission monitoring" and toggle on. Unplug and plug in, then try again.
 
 6. This step is important!
 If the code is accepted (that command did nothing to your phone) find the following data* and write it down, this will allow you to revert back if you do not like the lower resolution, do not skip this step, If you mess your screen up, with this you can go back:
 
-Mine (OPPO A53S) width: 720 height: 1600 density: 690
+Mine (OPPO) width: 720 height: 1600 density: 690
 
-*You can search your phone specs on the web too
+*You can search your phone specs on internet too
 
-7. Lets say your phone has a res. of 1080x1920, 480 ppi.. (yes, its height x width, not width x height)
+7. Using my phone resolution of 1600x720, 690 ppi.. (yes, its height x width, not width x height) we're lowering it to 1280x640, 300 ppi.
 
-So we're lowering it to 720x1280, 350 ppi. insert commands below:
+Insert commands below:
 
-adb shell wm size 720x1280
+``adb shell wm size 1280x640``
 
-adb shell wm density 350
+``adb shell wm density 300``
 
 *Note that, you may need to mess with the density (ppi) until you can read well and the phone GUI looks confortable.
 
 However my phone didnt have such a nice known resolution. It was 540x960, 256 ppi. So i did need an 16:9 resolution table to consult lower options: https://pacoup.com/2011/06/12/list-of-true-169-resolutions/
 
-Below are the lines I inserted in my phone.
-
-adb shell wm size 396x704
-adb shell wm density 600.
-
 Hope this helps!
+
+Credit to:
+u/CaptCapy
 
 Todo:
 
