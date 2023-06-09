@@ -28,9 +28,8 @@ if %errorlevel% neq 0 (
 
 for /f "tokens=2 delims=:" %%a in ('adb shell wm size') do set size=%%a
 for /f "tokens=1,2 delims=x" %%a in ("%size%") do (
-    set /a width=%%a
-    set /a height=%%b
-
+    set /a width=%%b
+    set /a height=%%a 
 )
 for /f "tokens=2 delims=: " %%a in ('adb shell wm density') do set density=%%a
 
