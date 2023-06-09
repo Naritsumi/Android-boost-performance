@@ -30,6 +30,7 @@ for /f "tokens=2 delims=:" %%a in ('adb shell wm size') do set size=%%a
 for /f "tokens=1,2 delims=x" %%a in ("%size%") do (
     set /a width=%%a
     set /a height=%%b
+
 )
 for /f "tokens=2 delims=: " %%a in ('adb shell wm density') do set density=%%a
 
@@ -41,8 +42,9 @@ set /a lower_height=%height%/2
 set /a lower_width=%width%/2
 set /a lower_density=round(sqrt(%lower_width%^2 + %lower_height%^2) / (%screensize% * 0.03937), 0)
 
-echo Lower resolution: %lower_height%x%lower_width%
-echo Lower density: %lower_density%
+echo Lower height: %lower_height% px
+echo Lower width: %lower_width% px
+echo Lower density: %lower_density% ppi
 
 pause
 
