@@ -19,7 +19,7 @@ Settings > About Phone > Tap (Build version or build number) until you get a pro
 2. Enable USB debugging find and enable USB debugging on your phone. 
 Settings > Developer options > Enable USB debugging
 
---- Imagen del debuger
+![alt text](https://github.com/Naritsumi/android-boost-performance/blob/main/img/usb-debugging.jpg)
 
 3. Download and install adb on your [PC](https://developer.android.com/studio/releases/platform-tools?hl=es-419) or [MAC](https://htc-one.gadgethacks.com/how-to/install-adb-fastboot-mac-os-x-send-commands-your-htc-one-0151178/). 
 Extract the contents of this ZIP file into an easily accessible folder and add it in path environment variable.
