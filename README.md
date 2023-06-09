@@ -27,6 +27,8 @@ Extract the contents of this ZIP file into an easily accessible folder and add i
 
 * Download the [.bat](https://github.com/Naritsumi/android-boost-performance/releases/tag/Release) file.
 
+![alt text](https://github.com/Naritsumi/android-boost-performance/blob/main/img/cmd.png)
+
 * Type the option you want, you can change the resolution manually or let the script do the job for you. The script will display your screen resolution, write it somewhere to continue the process. And that's it!
 
 # Or manual cmd
