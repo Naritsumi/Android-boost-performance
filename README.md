@@ -48,13 +48,9 @@ Insert commands below:
 
 *Note that, you may need to mess with the density (ppi) until you can read well and the phone GUI looks confortable.
 
-However my phone didnt have such a nice known resolution. It was 540x960, 256 ppi. So i did need an 16:9 resolution table to consult lower options: https://pacoup.com/2011/06/12/list-of-true-169-resolutions/
+However my phone didnt have such a nice known resolution. I did need an 16:9 resolution table to consult lower options: https://pacoup.com/2011/06/12/list-of-true-169-resolutions/
 
 Hope this helps!
 
 Credit to:
 u/CaptCapy
-
-Todo:
-
-- [ ] Español también
