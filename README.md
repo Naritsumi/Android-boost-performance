@@ -54,8 +54,9 @@ Note that, you may need to mess with the density (ppi) until you can read well a
 
 # Posible console errors:
 
-** If you get an "Not authorized" error check your phone and authorize the PC and try again.
-** If you get an "WRITE" error, go to Developer options and look for "Disable permission monitoring" and toggle on. Unplug and plug in, then try again.
+** If you get an ``Not authorized`` error check your phone and authorize the PC and try again.
+
+** If you get an ``WRITE`` error, go to Developer options and look for "Disable permission monitoring" and toggle on. Unplug and plug in, then try again.
 
 # Hope this helps!
 
