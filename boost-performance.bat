@@ -33,9 +33,10 @@ for /f "tokens=1,2 delims=x" %%a in ("%size%") do (
 )
 for /f "tokens=2 delims=: " %%a in ('adb shell wm density') do set density=%%a
 
-echo height: %height% px
-echo width: %width% px
-echo density: %density% ppi
+echo Height: %height% px
+echo Width: %width% px
+echo Density: %density% ppi
+echo.
 
 set /a lower_height=%height%/2
 set /a lower_width=%width%/2
@@ -69,6 +70,18 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 
+for /f "tokens=2 delims=:" %%a in ('adb shell wm size') do set size=%%a
+for /f "tokens=1,2 delims=x" %%a in ("%size%") do (
+    set /a width=%%b
+    set /a height=%%a 
+)
+for /f "tokens=2 delims=: " %%a in ('adb shell wm density') do set density=%%a
+
+echo Height: %height% px
+echo Width: %width% px
+echo Density: %density% ppi
+echo.
+
 set /p height=Enter the new height: 
 set /p width=Enter the new width: 
 set /p density=Enter the new density: 
@@ -92,3 +105,4 @@ if %errorlevel% neq 0 (
 )
 
 goto menu
+
