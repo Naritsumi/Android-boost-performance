@@ -60,7 +60,6 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 
-pause
 goto menu
 
 :manual_input
@@ -95,9 +94,4 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 
-echo Height: %height%
-echo Width: %width%
-echo Density: %density%
-
-pause
 goto menu
