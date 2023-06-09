@@ -58,8 +58,6 @@ if %errorlevel% neq 0 (
 adb shell wm density %lower_density%
 if %errorlevel% neq 0 (
     echo Error: Unable to run adb shell wm density %lower_density%.
-    pause
-    exit /b 1
 )
 
 goto menu
@@ -92,8 +90,6 @@ if %errorlevel% neq 0 (
 adb shell wm density %density%
 if %errorlevel% neq 0 (
     echo Error: Unable to run adb shell wm density %density%.
-    pause
-    exit /b 1
 )
 
 goto menu
